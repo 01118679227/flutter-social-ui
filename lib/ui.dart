@@ -7,15 +7,15 @@ class UI extends StatelessWidget {
         children: <Widget>[
           Stack(
             children: <Widget>[
-              Padding(padding: EdgeInsets.only(left:30.0,right: 30.0,top: 35.0,),
-              child: Icon(Icons.more_vert),
+              Padding(padding: EdgeInsets.only(left:20.0,right: 20.0,top: 25.0,),
+              child: IconButton(icon: Icon(Icons.more_vert),onPressed: (){},),
               ),
                Padding(
               padding: const EdgeInsets.only(left:70.0,top: 20.0,right: 60.0),
               child: TextField(
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search,color: Colors.black,size: 16.0,),
+                    prefixIcon: Icon(Icons.search,color: Colors.black,size: 14.0,),
                     filled: true,
                     fillColor: Colors.white30,
                     enabledBorder: OutlineInputBorder(
@@ -32,8 +32,8 @@ class UI extends StatelessWidget {
              Align(
                alignment: Alignment.centerRight,
                  child: Padding(
-                 padding: const EdgeInsets.only(right: 25.0,top: 40.0),
-                 child: Icon(Icons.arrow_forward_ios),
+                 padding: const EdgeInsets.only(right: 15.0,top: 23.0),
+                 child: IconButton(icon:Icon(Icons.arrow_forward_ios),onPressed: (){},),
                ),
              ),
             ],
@@ -102,7 +102,7 @@ class UI extends StatelessWidget {
                  color: Colors.grey.shade100,
                ),
                child: Center(
-                 child: Icon(Icons.keyboard_arrow_left,color: Colors.black,),
+                 child: IconButton(icon: Icon(Icons.keyboard_arrow_left,color: Colors.black,),onPressed: (){},),
                 ),
                  ),
                  ),
@@ -163,7 +163,7 @@ class UI extends StatelessWidget {
                  color: Colors.grey.shade100,
                ),
                child: Center(
-                 child: Icon(Icons.keyboard_arrow_left,color: Colors.black,),
+                 child: IconButton(icon: Icon(Icons.keyboard_arrow_left,color: Colors.black,),onPressed: (){},),
                 ),
                  ),
                  ),
