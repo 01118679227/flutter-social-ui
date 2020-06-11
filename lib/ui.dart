@@ -21,7 +21,7 @@ class UI extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30.0),
                       borderSide: BorderSide(
-                      color: Colors.grey.shade300
+                      color: Colors.grey.shade300,
                       ),
                     ),
                     hintText: 'what are you looking',
