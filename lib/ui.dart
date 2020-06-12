@@ -33,7 +33,7 @@ class UI extends StatelessWidget {
                alignment: Alignment.centerRight,
                  child: Padding(
                  padding: const EdgeInsets.only(right: 15.0,top: 23.0),
-                 child: IconButton(icon:Icon(Icons.arrow_forward_ios),onPressed: (){},),
+                 child: IconButton(icon:Icon(Icons.arrow_forward_ios,size: 17.0,),onPressed: (){},),
                ),
              ),
             ],
@@ -48,7 +48,7 @@ class UI extends StatelessWidget {
                  ),
                ),
              ),
-             SizedBox(height: 25.0,),
+             SizedBox(height: 35.0,),
          Stack(
             children : <Widget>[
                Padding(
@@ -64,6 +64,7 @@ class UI extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                       SizedBox(height: 20.0,),
                      Text('Ac Service And Repair',
@@ -73,18 +74,21 @@ class UI extends StatelessWidget {
                       ),
                      ),
                       SizedBox(height: 8.0,),
-                      Text('Min SAR 45',
-                      style: TextStyle(
-                       color: Colors.cyan.shade600,
-                       fontSize: 12.0,
-                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:68.0),
+                        child: Text('Min SAR 45',
+                          style: TextStyle(
+                        color: Colors.cyan.shade600,
+                        fontSize: 12.0,
+                          ),
                      ),
+                      ),
                      SizedBox(height: 20.0,),
                    ],
                 ),
                  SizedBox(height: 30.0,),
                 Padding(
-                  padding: const EdgeInsets.only(left: 28.0,right: 13.0),
+                  padding: const EdgeInsets.only(left: 17.0,right: 13.0),
                   child: Image.asset('image/Group 3019.png',height: 40.0,width: 40.0,),
                 ),
                   ],
@@ -109,7 +113,7 @@ class UI extends StatelessWidget {
              ],
          ),
 
-            SizedBox(height: 25.0,),
+            SizedBox(height: 15.0,),
          Stack(
             children : <Widget>[
                Padding(
@@ -134,12 +138,15 @@ class UI extends StatelessWidget {
                       ),
                      ),
                       SizedBox(height: 8.0,),
-                      Text('Min SAR 60',
-                      style: TextStyle(
-                       color: Colors.cyan.shade600,
-                       fontSize: 12.0,
-                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:60.0),
+                        child: Text('Min SAR 60',
+                        style: TextStyle(
+                         color: Colors.cyan.shade600,
+                         fontSize: 12.0,
+                        ),
                      ),
+                      ),
                      SizedBox(height: 20.0,),
                    ],
                 ),
